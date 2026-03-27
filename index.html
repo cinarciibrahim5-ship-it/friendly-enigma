@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProGamerx26 | Oyun Hediyeleri</title>
+    <title>ProGamerx26 | Hediyeler</title>
     <style>
-        body { background: #0a0a0c; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
-        .card { background: #1c1c21; margin: 20px auto; padding: 20px; border-radius: 15px; border: 1px solid #00f2ff; max-width: 400px; }
-        .taktik-kutusu { background: #222; padding: 15px; border-radius: 10px; margin-top: 15px; display: none; text-align: left; border-left: 5px solid #00f2ff; }
-        .btn { background: #00f2ff; color: #000; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; border: none; }
-        h2 { color: #00f2ff; margin: 0; }
+        body { background-color: #0a0a0c; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
+        .container { padding: 20px; max-width: 450px; margin: auto; }
+        header { background: #16161a; padding: 30px; border-bottom: 3px solid #00f2ff; }
+        h1 { color: #00f2ff; font-size: 24px; text-transform: uppercase; }
+        .card { background: #1c1c21; margin: 20px 0; padding: 20px; border-radius: 15px; border: 1px solid #333; }
+        .btn { background: #00f2ff; color: #000; padding: 15px; border-radius: 10px; font-weight: bold; display: block; text-decoration: none; font-size: 18px; border: none; cursor: pointer; width: 100%; }
+        .taktik-alani { display: none; background: #222; padding: 15px; margin-top: 15px; border-radius: 10px; text-align: left; border-left: 5px solid #00f2ff; }
     </style>
     <script>
-        function taktikGoster(id) {
-            document.getElementById(id).style.display = 'block';
-            alert("Tebrikler! Taktiği aşağıda görebilirsin.");
+        function reklamVeGoster() {
+            // Önce reklam sayfasını yeni sekmede açar (Sen para kazanırsın)
+            window.open('https://ay.live/OOL6', '_blank');
+            // Sonra aynı sayfada gizli taktikleri gösterir (Ziyaretçi içeriği görür)
+            document.getElementById('gizli-taktik').style.display = 'block';
+            alert("Reklam sekmesi açıldı. Reklamı geçtikten sonra buraya dönüp taktiği görebilirsin!");
         }
     </script>
 </head>
 <body>
-    <h1 style="margin-top:20px;">PRO GAMER X 26</h1>
-    <p>Oyun Hediyeleri ve Gizli Kodlar</p>
+    <header>
+        <h1>PRO GAMER X 26</h1>
+        <p>Premium Oyun Kodları & Taktikler</p>
+    </header>
 
-    <div class="card">
-        <h2>Brawl Stars</h2>
-        <p>Ücretsiz Elmas ve Kutu Taktiği</p>
-        <button onclick="taktikGoster('bs-taktik')" class="btn">TAKTİĞİ GÖR</button>
-        <div id="bs-taktik" class="taktik-kutusu">
-            <b>🔥 Elmas Taktiği:</b> Mağaza - İçerik Üreticisi kısmına <b>PRO26</b> yazarak 30 Elmas bonusunuzu aktif edin.
+    <div class="container">
+        <div class="card">
+            <h2 style="color:#00f2ff">Brawl Stars & PUBG</h2>
+            <p>Mart 2026 Ücretsiz Elmas ve UC Kodları</p>
+            <button onclick="reklamVeGoster()" class="btn">TIKLA VE KODLARI GÖR</button>
+            
+            <div id="gizli-taktik" class="taktik-alani">
+                <p>✅ <b>Brawl Stars:</b> Mağaza kod kısmına <b>PRO26</b> yazın.</p>
+                <p>✅ <b>PUBG UC Kodu:</b> <span style="color:#ff9900">PUBG-X26-2026</span></p>
+                <p>✅ <b>Robux Kodu:</b> <span style="color:#de3163">ROB-FREE-26</span></p>
+            </div>
         </div>
-    </div>
-
-    <div class="card">
-        <h2>PUBG Mobile</h2>
-        <p>Yeni Sezon UC Hediye Kodu</p>
-        <button onclick="taktikGoster('pubg-taktik')" class="btn">UC KODUNU AL</button>
-        <div id="pubg-taktik" class="taktik-kutusu">
-            <b>🔥 UC Kodu:</b> <span style="color:#ff9900">PUBG-X26-2026</span><br>(Midasbuy sitesinde deneyin.)
-        </div>
+        <p>© 2026 ProGamerx26</p>
     </div>
 </body>
 </html>
