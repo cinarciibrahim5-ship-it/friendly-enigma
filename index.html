@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="tr" class="notranslate" translate="no">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProGamerx26 | Premium Rewards</title>
+    <title>ProGamerx26 | Oyun Hediyeleri</title>
     <style>
-        body { background-color: #0a0a0c; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; }
-        .container { padding: 20px; max-width: 500px; margin: auto; }
-        header { background: linear-gradient(45deg, #16161a, #1f1f2e); padding: 40px 20px; border-bottom: 3px solid #00f2ff; box-shadow: 0 5px 15px rgba(0,242,255,0.2); }
-        h1 { color: #00f2ff; margin: 0; font-size: 28px; letter-spacing: 2px; text-transform: uppercase; }
-        .card { background: #1c1c21; margin: 25px 0; padding: 25px; border-radius: 15px; border: 1px solid #333; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); border-color: #00f2ff; }
-        h2 { color: #fff; font-size: 20px; margin-bottom: 15px; }
-        .btn { background: #00f2ff; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 10px; font-weight: bold; display: block; font-size: 18px; border: none; cursor: pointer; transition: 0.3s; }
-        .btn:hover { background: #00d1db; box-shadow: 0 0 20px rgba(0,242,255,0.4); }
-        .footer { font-size: 12px; color: #555; margin-top: 50px; }
+        body { background: #0a0a0c; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
+        .card { background: #1c1c21; margin: 20px auto; padding: 20px; border-radius: 15px; border: 1px solid #00f2ff; max-width: 400px; }
+        .taktik-kutusu { background: #222; padding: 15px; border-radius: 10px; margin-top: 15px; display: none; text-align: left; border-left: 5px solid #00f2ff; }
+        .btn { background: #00f2ff; color: #000; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; border: none; }
+        h2 { color: #00f2ff; margin: 0; }
     </style>
+    <script>
+        function taktikGoster(id) {
+            document.getElementById(id).style.display = 'block';
+            alert("Tebrikler! Taktiği aşağıda görebilirsin.");
+        }
+    </script>
 </head>
 <body>
+    <h1 style="margin-top:20px;">PRO GAMER X 26</h1>
+    <p>Oyun Hediyeleri ve Gizli Kodlar</p>
 
-    <header>
-        <h1>PRO GAMER X 26</h1>
-        <p style="color: #888;">Güncel Oyun Taktikleri & Hediyeler</p>
-    </header>
-
-    <div class="container">
-        
-        <div class="card">
-            <h2>Brawl Stars: Bedava Elmas</h2>
-            <p>Mart 2026 Aktif Kodlar</p>
-            <button onclick="window.location.href='https://ay.live/49yC'" class="btn">ELMASLARI GÖR</button>
+    <div class="card">
+        <h2>Brawl Stars</h2>
+        <p>Ücretsiz Elmas ve Kutu Taktiği</p>
+        <button onclick="taktikGoster('bs-taktik')" class="btn">TAKTİĞİ GÖR</button>
+        <div id="bs-taktik" class="taktik-kutusu">
+            <b>🔥 Elmas Taktiği:</b> Mağaza - İçerik Üreticisi kısmına <b>PRO26</b> yazarak 30 Elmas bonusunuzu aktif edin.
         </div>
-
-        <div class="card" style="border-left: 5px solid #ff9900;">
-            <h2 style="color: #ff9900;">PUBG Mobile: Bedava UC</h2>
-            <p>Yeni Sezon UC Dağıtımı</p>
-            <button onclick="window.location.href='https://ay.live/49yC'" class="btn" style="background: #ff9900;">UC KODUNU AL</button>
-        </div>
-
-        <div class="card" style="border-left: 5px solid #de3163;">
-            <h2 style="color: #de3163;">Roblox: Bedava Robux</h2>
-            <p>Haftalık Promosyon Kodları</p>
-            <button onclick="window.location.href='https://ay.live/49yC'" class="btn" style="background: #de3163;">ROBUX LİSTESİ</button>
-        </div>
-
-        <p class="footer">© 2026 ProGamerx26 - Tüm Hakları Saklıdır.</p>
     </div>
 
+    <div class="card">
+        <h2>PUBG Mobile</h2>
+        <p>Yeni Sezon UC Hediye Kodu</p>
+        <button onclick="taktikGoster('pubg-taktik')" class="btn">UC KODUNU AL</button>
+        <div id="pubg-taktik" class="taktik-kutusu">
+            <b>🔥 UC Kodu:</b> <span style="color:#ff9900">PUBG-X26-2026</span><br>(Midasbuy sitesinde deneyin.)
+        </div>
+    </div>
 </body>
 </html>
