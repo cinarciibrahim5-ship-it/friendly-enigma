@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamer Hediyeleri</title>
+    <title>ProGamerx26 | Hediye Merkezi</title>
     <style>
-        body { background: #0a0a0c; color: #fff; font-family: sans-serif; text-align: center; padding: 20px; }
-        .kutu { border: 2px solid #00f2ff; padding: 20px; border-radius: 15px; background: #16161a; max-width: 400px; margin: auto; }
-        .kod-satiri { background: #222; padding: 10px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #00f2ff; text-align: left; }
-        h1 { color: #00f2ff; }
-        b { color: #ff9900; }
+        body { background-color: #0a0a0c; color: #fff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .container { max-width: 450px; margin: auto; border: 2px solid #00f2ff; border-radius: 20px; padding: 20px; background: #111; }
+        h1 { color: #00f2ff; font-size: 26px; margin-bottom: 20px; }
+        .kod-button { 
+            background: #1c1c21; border: 1px solid #333; padding: 15px; margin: 10px 0; border-radius: 12px; 
+            text-align: left; cursor: pointer; display: block; width: 100%; color: white; transition: 0.3s;
+        }
+        .kod-button:hover { border-color: #00f2ff; background: #222; }
+        .tick { color: #4caf50; margin-right: 10px; }
+        .vurgu { color: #ff9900; font-weight: bold; }
+        .alt-yazi { font-size: 11px; color: #666; margin-top: 20px; }
     </style>
+    <script>
+        function reklamAc() {
+            // Reklamı yeni sekmede açar (Sana para kazandırır)
+            window.open('https://ay.live/49yC', '_blank');
+            // Ziyaretçiye bilgi verir
+            alert("Kod aktif edildi! Reklam sekmesini kapatıp kodu kullanabilirsiniz.");
+        }
+    </script>
 </head>
 <body>
+
     <h1>PRO GAMER X 26</h1>
-    <div class="kutu">
-        <h3>🎁 GÜNCEL KODLAR 🎁</h3>
-        
-        <div class="kod-satiri">
-            ✅ <b>Brawl Stars:</b> Mağaza kod kısmına <b>PRO26</b> yazın.
-        </div>
 
-        <div class="kod-satiri">
-            ✅ <b>PUBG UC:</b> <span style="color:#00f2ff">PUBG-X26-2026</span>
-        </div>
+    <div class="container">
+        <h3 style="margin-top:0;">🎁 GÜNCEL KODLAR 🎁</h3>
 
-        <div class="kod-satiri">
-            ✅ <b>Robux:</b> <span style="color:#de3163">ROB-FREE-26</span>
-        </div>
-        
-        <p style="font-size: 11px; color: #666;">Kodlar otomatik olarak güncellenmiştir.</p>
+        <button class="kod-button" onclick="reklamAc()">
+            <span class="tick">✅</span> <b>Brawl Stars:</b> Mağaza kod kısmına <span class="vurgu">PRO26</span> yazın.
+        </button>
+
+        <button class="kod-button" onclick="reklamAc()">
+            <span class="tick">✅</span> <b>PUBG UC:</b> <span class="vurgu">PUBG-X26-2026</span>
+        </button>
+
+        <button class="kod-button" onclick="reklamAc()">
+            <span class="tick">✅</span> <b>Robux:</b> <span class="vurgu">ROB-FREE-26</span>
+        </button>
+
+        <p class="alt-yazi">Kodlar otomatik olarak güncellenmiştir.</p>
     </div>
+
 </body>
 </html>
